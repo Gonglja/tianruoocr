@@ -37,7 +37,7 @@ namespace TrOCR.Helper
 
         public static string SgBasicOpenOcr(Image image)
         {
-            var url = "https://deepi.sogou.com/api/sogouService";
+            var url = "http://deepi.sogou.com/api/sogouService";
             var referer = "https://deepi.sogou.com/?from=picsearch&tdsourcetag=s_pctim_aiomsg";
             var imageData = Convert.ToBase64String(ImgToBytes(image));
             var t = CommonHelper.GetTimeSpan(true);
